@@ -98,12 +98,7 @@
             emptyerror();
           } else {
             loader.style.display = "flex";
-            if(!sendmail()){
-              error();
-              loader.style.display = "none";
-              return;
-            }
-            sendmail();
+            sendmail(name.value, email.value, msg.value);
             success();
             loader.style.display = "none";
           }
@@ -111,11 +106,11 @@
       }
       validate();
 
-      function sendmail() {
+      function sendmail(name, email, msg) {
         emailjs.send("service_id", "template_name", {
-          to_name: "benaiah",
-          from_name: "contact form test",
-          message: "hello world",
+          to_name: "your recipient name",
+          from_name: email,
+          message: msg,
         });
       }
 
