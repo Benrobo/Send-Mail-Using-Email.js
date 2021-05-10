@@ -4,7 +4,7 @@
 This project is all about seding mail using a library called [email.js](https://emailjs.com) without using any backend language.
 
 #### Setup
-```html
+```javascript
     User ID => user_randomid
     Access Token youraccess token
 
