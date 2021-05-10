@@ -5,8 +5,8 @@ This project is all about seding mail using a library called [email.js](https://
 
 #### Setup
 ```javascript
-    User ID => user_randomid
-    Access Token youraccess token
+   //UserID => user_randomid
+   //AccessToken youraccess_token
 
     (function () {
         emailjs.init(USERID);
